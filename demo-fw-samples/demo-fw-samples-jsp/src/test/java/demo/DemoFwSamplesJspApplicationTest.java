@@ -16,7 +16,7 @@ public class DemoFwSamplesJspApplicationTest {
 	@Autowired
 	TestRestTemplate restTemplate;
 
-	@Ignore("IDE上ではテストできるが、mvn testで動かない...")
+	//@Ignore("IDE上ではテストできるが、mvn testで動かない...")
 	@Test
 	public void contextLoads() {
 		String foo = restTemplate.getForObject("/foo", String.class);
